@@ -26,12 +26,12 @@ male_fit <- augment(male_model) %>% arrange(BMI)
 female_model <- lm(BPSysAve ~ BMI, data = filter(df, Gender == "female"))
 female_fit <- augment(female_model) %>% arrange(BMI)
 
-# Define colors for male and female lines 
+#  Define colors for male and female lines 
 male_fit_color <- "#0072B2"
 female_fit_color <- "#D55E00"
         
-# Visualization
-hc <- df %>% 
+#  Visualization
+hc <- df %>%  
   hchart('scatter', hcaes(x = BMI, y = BPSysAve, group = Gender))  %>%
   hc_colors(c("#009E73","#F0E442" )) %>%
   hc_add_series(
