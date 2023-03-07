@@ -29,7 +29,7 @@ ggbetweenstats(
   theme_bw()
 
 # Save the plot as SVG
-ggsave("nhanes_bmi.svg", width = 10, height = 6) 
+ggsave("iris.svg", width = 10, height = 6) 
 
 
 
