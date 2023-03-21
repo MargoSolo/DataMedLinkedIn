@@ -23,7 +23,7 @@ ggbetweenstats(
   plot.type = "violin",  #This creates a violin plot of the sepal length distribution for each species of iris. 
   type = "np", # The  "type" parameter is set to "np" to indicate that we want to use a  
   # nonparametric test to compare the groups.
-  title = "Distribution of sepal length across Iris species" 
+  title = "Distribution of sepal length across Iris species"
   
 ) + 
   theme_bw()
