@@ -39,7 +39,7 @@ t2 <- small_trial %>%
   modify_column_hide(all_stat_cols())
 
 # Merging the 3 tables together and adding additional gt formatting
-add_difference_ex2 <- tbl_merge(list(t0, t1, t2)) %>%
+finally_table <- tbl_merge(list(t0, t1, t2)) %>%
   modify_spanning_header(
     list(
       all_stat_cols() ~ "**Tumor Grade**",
@@ -51,6 +51,6 @@ add_difference_ex2 <- tbl_merge(list(t0, t1, t2)) %>%
 **Note:**  Mood's test for medians is a non-parametric alternative to the one-way ANOVA F-test. ,                       
 **Note:**  Fisher's exact test is a non-parametric alternative to the chi-squared test for small sample sizes."
   )    
-add_difference_ex2
+finally_table 
  
  
