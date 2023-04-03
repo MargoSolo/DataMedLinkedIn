@@ -8,11 +8,11 @@ for (package in needed_packages) {
   }
 }
 
-# Load necessary libraries 
+# Load necessary libraries
 library(gtsummary)
 library(dplyr)
 
-# Selecting relevant columns from trial dataset
+# Selecting relevant columns from trial dataset 
 small_trial <- trial %>% dplyr :: select(grade, age, response)
 
 # Creating summary table by grade 
