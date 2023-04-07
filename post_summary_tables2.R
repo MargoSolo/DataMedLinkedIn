@@ -1,4 +1,4 @@
-# Check if libraries are installed and install if necessary 
+# Check if libraries are installed and install if necessary  
 needed_packages <- c("dplyr", "gtsummary")
 
 for (package in needed_packages) {
@@ -8,11 +8,11 @@ for (package in needed_packages) {
   }
 }
 
-# Load necessary libraries
+# Load necessary libraries 
 library(gtsummary)
 library(dplyr)
 
-# Selecting relevant columns from trial dataset
+# Selecting relevant columns from trial dataset 
 small_trial <- trial %>% dplyr :: select(grade, age, response)
 
 # Creating summary table by grade 
