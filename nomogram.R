@@ -12,7 +12,7 @@ for (package in needed_packages) {
 library(rms)
 library(readxl)
 
-#Sets the working directory to the specified path.
+#Sets the working directory to the specified path. 
 setwd('/../DataMedLinkedIn')
 
 # Load  dataset
