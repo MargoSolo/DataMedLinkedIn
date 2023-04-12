@@ -4,7 +4,7 @@ needed_packages <- c("dplyr", "broom", "highcharter")
 for (package in needed_packages) {
   if (!require(package, character.only = TRUE)) {
     install.packages(package, dependencies = TRUE)
-    library(package, character.only = TRUE)
+    library(package, character.only = TRUE) 
   }
 }
 
