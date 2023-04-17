@@ -14,7 +14,7 @@ library(broom)
 library(highcharter)
 
 
-# Load NHANES dataset and select relevant variables  
+# Load NHANES dataset and select relevant variables   
 nhanes_data <- NHANES::NHANES
 df <- nhanes_data %>%
   select(BMI, BPSysAve,Gender )
