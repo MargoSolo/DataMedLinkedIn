@@ -20,7 +20,7 @@ t0 <- small_trial %>%
   tbl_summary(by = grade, missing = "no") %>%
   modify_header(all_stat_cols() ~ "**{level}**")
 
-# Creating table comparing grade I and II 
+# Creating table comparing grade I and II  
 t1 <- small_trial %>%
   filter(grade %in% c("I", "II")) %>%
   tbl_summary(by = grade, missing = "no") %>%
