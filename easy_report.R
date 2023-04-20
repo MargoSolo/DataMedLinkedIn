@@ -1,5 +1,5 @@
 # Check if libraries are installed and install if necessary 
-needed_packages <- c("report",  'readxl') 
+needed_packages <- c("report", "dplyr",  'readxl') 
 
 for (package in needed_packages) {
   if (!require(package, character.only = TRUE)) {
@@ -11,6 +11,7 @@ for (package in needed_packages) {
 # Load required libraries 
 library(readxl)
 library(report) # to report results 
+library(dplyr)
 
 #Sets the working directory to the specified path. 
 setwd('/../DataMedLinkedIn')
@@ -31,7 +32,7 @@ data <- read_excel("data.xlsx")
 t.test(bmi ~ sbreath, data = data) %>% report()
 
 # Run correlation test to examine the relationship between BMI and age
-cor.test(bmi, age, data = data) %>% report()
+cor.test(data$bmi, data$age ) %>% report()
 
 # Run ANOVA to investigate the relationship between SAD, Chol, and BMI
 aov(SAD ~ Chol + bmi, data = data) %>% report()
