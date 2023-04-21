@@ -13,7 +13,7 @@ library(readxl)
 library(report) # to report results 
 library(dplyr)
 
-#Sets the working directory to the specified path. 
+#Sets the working directory to the specified path.  
 setwd('/../DataMedLinkedIn')
 
 # Load dataset
