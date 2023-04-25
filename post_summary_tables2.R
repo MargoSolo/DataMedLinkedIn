@@ -12,7 +12,7 @@ for (package in needed_packages) {
 library(gtsummary)
 library(dplyr)
 
-# Selecting relevant columns from trial dataset 
+# Selecting relevant columns from trial dataset  
 small_trial <- trial %>% dplyr :: select(grade, age, response)
 
 # Creating summary table by grade 
