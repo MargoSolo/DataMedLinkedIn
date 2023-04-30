@@ -12,10 +12,10 @@ for (package in needed_packages) {
 library(gtsummary)
 library(dplyr)
 
-# Selecting relevant columns from trial dataset  
+# Selecting relevant columns from trial dataset
 small_trial <- trial %>% dplyr :: select(grade, age, response)
 
-# Creating summary table by grade  
+# Creating summary table by grade
 t0 <- small_trial %>%
   tbl_summary(by = grade, missing = "no") %>%
   modify_header(all_stat_cols() ~ "**{level}**")
