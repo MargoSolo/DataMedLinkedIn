@@ -16,9 +16,9 @@ trial %>%
   tbl_summary(
     include = c(trt, marker, age, response, stage),
     statistic = age ~ "{mean} ({sd})",
-    by = trt #it creates a summary table for the trial dataset with specific columns and summary statistics 
+    by = trt #it creates a summary table for the trial dataset with specific columns and summary statistics  
   ) %>%
-  add_stat_label() %>% #The add_stat_label() function adds statistical labels to the summary table 
+  add_stat_label() %>% #The add_stat_label() function adds statistical labels to the summary table  
   add_p(
     test = list(
       response ~ "fisher.test",
