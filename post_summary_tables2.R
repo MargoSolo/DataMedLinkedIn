@@ -8,7 +8,7 @@ for (package in needed_packages) {
   }
 }
 
-# Load necessary libraries 
+# Load necessary libraries
 library(gtsummary)
 library(dplyr)
 
