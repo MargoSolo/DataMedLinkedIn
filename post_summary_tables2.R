@@ -29,7 +29,7 @@ t1 <- small_trial %>%
   modify_header(p.value ~ md("**I vs. II**")) %>%
   modify_column_hide(all_stat_cols())
 
-# Creating table comparing grade I and III
+# Creating table comparing grade I and III 
 t2 <- small_trial %>%
   filter(grade %in% c("I", "III")) %>%
   tbl_summary(by = grade, missing = "no") %>%
