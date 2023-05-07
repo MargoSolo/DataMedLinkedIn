@@ -19,7 +19,7 @@ nhanes_data <- NHANES::NHANES
 df <- nhanes_data %>%
   select(BMI, BPSysAve,Gender )
 
-# Fit linear models for males and females 
+# Fit linear models for males and females
 male_model <- lm(BPSysAve ~ BMI, data = filter(df, Gender == "male"))
 male_fit <- augment(male_model) %>% arrange(BMI)
 
