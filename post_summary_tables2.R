@@ -8,14 +8,14 @@ for (package in needed_packages) {
   }
 }
 
-# Load necessary libraries
+# Load necessary libraries  
 library(gtsummary)
 library(dplyr)
 
 # Selecting relevant columns from trial dataset
 small_trial <- trial %>% dplyr :: select(grade, age, response)
 
-# Creating summary table by grade
+# Creating summary table by grade 
 t0 <- small_trial %>%
   tbl_summary(by = grade, missing = "no") %>%
   modify_header(all_stat_cols() ~ "**{level}**")
@@ -29,7 +29,7 @@ t1 <- small_trial %>%
   modify_header(p.value ~ md("**I vs. II**")) %>%
   modify_column_hide(all_stat_cols())
 
-# Creating table comparing grade I and III
+# Creating table comparing grade I and III 
 t2 <- small_trial %>%
   filter(grade %in% c("I", "III")) %>%
   tbl_summary(by = grade, missing = "no") %>%
