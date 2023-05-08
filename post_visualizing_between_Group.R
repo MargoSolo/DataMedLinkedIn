@@ -8,7 +8,7 @@ for (package in needed_packages) {
   }
 }
 
-# Load libraries
+# Load libraries 
 library(ggplot2)
 library(ggstatsplot)
 
