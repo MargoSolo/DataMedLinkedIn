@@ -1,4 +1,4 @@
-# Check if libraries are installed and install if necessary 
+# Check if libraries are installed and install if necessary  
 needed_packages <- c("ggplot2", "ggstatsplot" )
 
 for (package in needed_packages) {
