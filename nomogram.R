@@ -15,7 +15,7 @@ library(readxl)
 #Sets the working directory to the specified path. 
 setwd('/../DataMedLinkedIn')
 
-# Load  dataset
+# Load  dataset 
 # sbreath - shortness of breath 
 # sroh  - health status reported by the individual themselves 
 # The variable is measured on a scale that ranges from E (Excellent) to VG (Very Good), G (Good), F (Fair), and P (Poor).
