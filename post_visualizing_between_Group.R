@@ -12,7 +12,7 @@ for (package in needed_packages) {
 library(ggplot2)
 library(ggstatsplot)
 
-# Set seed for reproducibility
+# Set seed for reproducibility 
 set.seed(123)
 
 # Create a box plot visualization
