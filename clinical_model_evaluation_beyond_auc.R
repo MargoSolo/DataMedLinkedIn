@@ -9,7 +9,7 @@ pacman::p_load(tidyverse, pROC, dcurves, patchwork)
 # 2. GENERATE SYNTHETIC CLINICAL DATA
 set.seed(123)
 n_patients <- 1000
-prevalence <- 0.05 # 5% of patients have the condition (e.g., rare cancer)
+prevalence <- 0.05 # 5% of patients have the condition  
 
 # True outcomes
 y <- rbinom(n_patients, 1, prevalence)
@@ -82,4 +82,5 @@ dca_plot <- plot(dca_results) +
   theme_minimal()
 
 # Show plots side-by-side
+
 calibration_plot + dca_plot
